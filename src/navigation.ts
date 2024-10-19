@@ -18,29 +18,7 @@ export const headerData = {
       text: 'Contact',
       href: getPermalink('/contact'),
     },
-    {
-      text: 'Pages',
-      links: [
-        {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
 
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
-    },
     {
       text: 'Blog',
       links: [
