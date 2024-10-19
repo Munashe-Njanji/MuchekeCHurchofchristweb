@@ -1,0 +1,43 @@
+---
+import eventsData from '../eventsData.json';
+
+// Separate events into upcoming and past
+const upcomingEvents = eventsData.filter(event => event.isUpcoming);
+const pastEvents = eventsData.filter(event => !event.isUpcoming);
+---
+
+<section class="py-8 bg-gray-100">
+  <div class="container mx-auto">
+    <h2 class="text-2xl font-bold mb-6 text-center">Upcoming Events</h2>
+    {upcomingEvents.length ? (
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {upcomingEvents.map(event => (
+          <li class="bg-white p-6 rounded-lg shadow-md" key={event.title}>
+            <h3 class="text-xl font-semibold mb-2">{event.title}</h3>
+            <p class="mb-2">{event.description}</p>
+            <p class="text-blue-500 font-medium">Date: {new Date(event.date).toLocaleDateString()}</p>
+            <p class="text-blue-500 font-medium">Location: {event.location}</p>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p class="text-center">No upcoming events at the moment.</p>
+    )}
+
+    <h2 class="text-2xl font-bold mt-12 mb-6 text-center">Past Events</h2>
+    {pastEvents.length ? (
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {pastEvents.map(event => (
+          <li class="bg-white p-6 rounded-lg shadow-md" key={event.title}>
+            <h3 class="text-xl font-semibold mb-2">{event.title}</h3>
+            <p class="mb-2">{event.description}</p>
+            <p class="text-blue-500 font-medium">Date: {new Date(event.date).toLocaleDateString()}</p>
+            <p class="text-blue-500 font-medium">Location: {event.location}</p>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p class="text-center">No past events available.</p>
+    )}
+  </div>
+</section>

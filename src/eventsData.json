@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Sunday Worship",
+    "date": "2023-10-21",
+    "description": "Join us for our weekly Sunday worship service at 9 AM.",
+    "location": "Mucheke Church of Christ",
+    "isUpcoming": true
+  },
+  {
+    "title": "Community Outreach",
+    "date": "2023-09-15",
+    "description": "Help us make a difference in our community by participating in our outreach program.",
+    "location": "Mucheke Community Center",
+    "isUpcoming": false
+  }
+]

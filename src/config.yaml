@@ -1,30 +1,30 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Mucheke Church of Christ
+  site: 'https://muchekechurch.org'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: your-google-verification-id-here
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Mucheke Church of Christ
+    template: '%s — Mucheke Church of Christ'
+  description: "🌟 A welcoming community dedicated to faith, fellowship, and service. Join us in worship and growth."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Mucheke Church of Christ
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@mucheke_church'
+    site: '@mucheke_church'
     cardType: summary_large_image
 
 i18n:
